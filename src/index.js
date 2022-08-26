@@ -27,7 +27,7 @@ client.on('interactionCreate', async interaction => {
   
     if (interaction.commandName === 'quote') {
       await interaction.reply({
-        content: `<:larrow:1007801165175595039> ${interaction.options.get("quote-text").value} <:rarrow:1007801166912045116>`
+        content: `<:larrow:1007801165175595039>${interaction.options.get("quote-text").value}<:rarrow:1007801166912045116>`
       }); 
     }
   });
