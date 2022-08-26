@@ -1,0 +1,29 @@
+{
+  "name": "xivquotebot",
+  "version": "1.0.0",
+  "description": "Discord bot that generates ffxiv-like quotes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexmofu/xivqotes-discord.git"
+  },
+  "author": "Alexmofu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexmofu/xivqotes-discord/issues"
+  },
+  "homepage": "https://github.com/Alexmofu/xivqotes-discord#readme",
+  "dependencies": {
+    "@discordjs/rest": "^1.1.0",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
