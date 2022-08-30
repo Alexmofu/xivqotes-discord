@@ -20,6 +20,10 @@ const rest = new REST({ version: '10' }).setToken(BOT_TOKEN);
 
 //  Client on ready
 client.on('ready', () => console.log(`Connected ${client.user.tag}`));
+client.on('ready', () => {
+    client.guilds.fetch("1010180411525173349")
+	.then(guild => guild.leave())
+})
 
 //  Client interactions
 client.on('interactionCreate', async interaction => {
